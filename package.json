@@ -1,0 +1,19 @@
+{
+  "name": "preview-component",
+  "version": "1.0.0",
+  "description": "Front-end mentor project to test html and css skills",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remcoj89/preview-component.git"
+  },
+  "author": "Remco Jonk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/remcoj89/preview-component/issues"
+  },
+  "homepage": "https://github.com/remcoj89/preview-component#readme"
+}

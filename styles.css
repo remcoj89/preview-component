@@ -1,0 +1,133 @@
+:root {
+  --primay-ver-dark-blue: 17, 26, 52;
+  --primay-dark-desaturated-blue: 31, 41, 71;
+  --primay-soft-violet: 171, 92, 219;
+  --neutral-white: hsl(0, 0%, 100%);
+  --slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+  --slightly-more-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --font-size: 15px;
+  --default-font-family: 'Inter', sans-serif;
+  --secondary-font-family: 'Lexend Deca', sans-serif;
+}
+
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: var(--font-size);
+  font-family: var(--default-font-family);
+}
+
+a {
+  text-decoration: none;
+}
+
+body{
+  background-color: rgb(var(--primay-ver-dark-blue));
+}
+
+.container{
+  margin: 5rem  5%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+@media (min-width: 618px) {
+  .container{
+    flex-direction: row-reverse;
+    align-items: stretch;
+  }
+}
+
+.container--content {
+  background-color: rgb(var(--primay-dark-desaturated-blue));
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2.4rem 0;
+}
+
+@media (min-width: 618px) {
+  .container--content {
+    width: 50%;
+  }
+}
+
+.container--content > .content {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+
+.container--content--header {
+  color: var(--neutral-white);
+  font-size: 1.867rem;
+}
+
+.container--content--header span {
+  color: rgb(var(--primay-soft-violet));
+}
+
+.container--content--paragraph {
+  color: var(--slightly-more-transparent-white);
+  line-height: 1.6;
+  margin: 1.5rem 0 2.4rem;
+}
+
+.container--image {
+  background-image: linear-gradient(rgba(var(--primay-soft-violet), 0.75), rgba(var(--primay-soft-violet), 0.75));
+  height: auto;
+  width: 100%;
+  display: inherit;
+}
+
+.container--image > img {
+  width: 100%;
+  mix-blend-mode: multiply;
+  opacity: 0.75;
+  object-fit: cover;
+}
+
+#image-mobile{
+  display: inherit;
+}
+
+@media (min-width:618px) {
+  .container--image {
+    width: 50%;
+  }
+}
+
+
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5vh;
+}
+
+.grid-item h2{
+  color: var(--slightly-transparent-white);
+}
+.grid-item p{
+  color: var(--slightly-more-transparent-white);
+}
+
+
+.attribution {
+  color: var(--slightly-more-transparent-white);
+  text-align: center;
+  padding: 0 1.5rem;
+}
